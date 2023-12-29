@@ -1,14 +1,11 @@
----
-title: About
-layout: page
----
+
 <h2 class="title" >ABOUT ME</h2>
 <!--![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})-->
 
 <p><h3 style="color: #222;font-family: Comic Sans MS;">Hey you!<span>&#128075;</span> I’m Indrajeet</h3></p>
 
 <p style="color: #222;font-family: Comic Sans MS; text-align: justify;">I am a Computer Science professional with a strong educational background and 
-    four years of experience in the industry. I am currently pursuing masters in Computer Science from the 
+    four years of experience in the industry. I am currently pursuing a master's in Computer Science from the 
     <a href="https://www.tcd.ie/scss/">Trinity College Dublin</a>, which I am expecting to complete by August 2024.  I've worked and explored the fields of machine learning with various projects covering the
 major portions of Natural Language Processing. <br><br>Explore my profile and feel free
 to get in touch anytime <span>&#9749;</span></p>.<br>
@@ -89,5 +86,5 @@ downtime. An integral part of the roster, ensuring continuous system surveillanc
 <br>
 <h2 id="contact">CONTACT</h2>
 <ul>
-<li><h4 style="font-family: 'Comic Sans MS';">Email: <a href="mailto:kumari@tcd.ie">ajays@virginia.edu</a></h4></li>
+<li><h4 style="font-family: 'Comic Sans MS';">Email: <a href="mailto:kumari@tcd.ie">Kumari@tcd.ie</a></h4></li>
 </ul>
