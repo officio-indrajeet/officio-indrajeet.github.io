@@ -89,5 +89,5 @@ downtime. An integral part of the roster, ensuring continuous system surveillanc
 <br>
 <h2 id="contact">CONTACT</h2>
 <ul>
-<li><h4 style="font-family: 'Comic Sans MS';">Email: <a href="mailto:ajays@virginia.edu">ajays@virginia.edu</a></h4></li>
+<li><h4 style="font-family: 'Comic Sans MS';">Email: <a href="mailto:kumari@tcd.ie">ajays@virginia.edu</a></h4></li>
 </ul>
