@@ -47,7 +47,7 @@ authors:
     name: Indrajeet Kumar
     bio: Software Development Engineer | Java Developer
     external-image: false
-    picture: assets/images/images.jpg
+    picture: /assets/images/images.jpg
    # twitter: johndoe
   
 # do you want a larger site? change the option below
