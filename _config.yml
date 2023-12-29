@@ -35,9 +35,9 @@ disqus:
   categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: indrajeet1103
+#facebook: myfacebook
+#twitter: mytwitter
+#instagram: indrajeet1103
 linkedin: indrajeet-1103
 github: officio-indrajeet
 email: kumari@tcd.ie
