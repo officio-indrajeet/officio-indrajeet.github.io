@@ -2,15 +2,35 @@
 layout: page
 title: Projects
 ---
-<section class="list">
+<h2 class="title" >PROJECTS</h2>
+<!-- <section class="list">
     {% for post in site.posts %}
         {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
+            <div class="item {% if post.star %}star{% endif %}" >
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
+                    <h3 class="title" style="font-family: 'Noto Serif';">{{ post.ct }}. {{ post.title }}</h3>
                 </a>
             </div>
         {% endif %}
-    {% endfor %}
+    {% endfor %} -->
+
+    <ol class="skill-list" style="font-family: 'Comic Sans MS';">
+    
+        <li><h4 style="font-family: 'Comic Sans MS';">News collection and summarization Tool [NLP, Clustering, Web Scraping, Django]</h4></li>
+        <p style="font-family: 'Comic Sans MS';font-size:14px;color:black;">• Built a backend system for news collection using Django framework.<br> • News Summarization using NLP.</p>
+        
+        <li><h4 style="font-family: 'Comic Sans MS';"><a href="https://github.com/ajs997/AI4SG-RandomForestRecommendationSystem">Diet Recommendation System</a> [Python, Machine Learning]</h4></li>
+        <p style="font-family: 'Comic Sans MS';font-size:14px;color:black;">Built a Recommendation System, that actively contributes to a user’s daily diet by providing healthy food recommendations by using Random Forest.</p>
+        
+        <li><h4 style="font-family: 'Comic Sans MS';">Crime Rate Analytics [Statistics, Machine Learning]</h4></li>
+        <p style="font-family: 'Comic Sans MS';font-size:14px;color:black;">• Built a time series model to understand the crime trends in Charlottesville.<br> • Incuded a prediction model to predict future crimes.</p>
+
+        <li><h4 style="font-family: 'Comic Sans MS';"><a href="https://github.com/ajs997/EITProj">Automatic Pet Feed System Using Discord</a> [Arduino, Discord Bot]</h4></li>
+        <p style="font-family: 'Comic Sans MS';font-size:14px;color:black;">• Built a Pet Feed system which can be remotely managed by using Discord app.<br> • Created a Discord bot that acts as an interface between our sytem and the user.</p>
+        
+        <li><h4 style="font-family: 'Comic Sans MS';">Attendance System using Facial Recognition [Machine Learning]</h4></li>
+        <p style="font-family: 'Comic Sans MS';font-size:14px;color:black;">• Built a proxy-free automated attendance system using advanced ML algorithms.<br> • Examined use case studies for accuracy, response time, and proxy elimination using blink detection.</p>
+
+    </ol>
+
 </section>
