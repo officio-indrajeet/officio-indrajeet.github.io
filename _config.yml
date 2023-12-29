@@ -1,6 +1,6 @@
 # main text of home
-title: John Doe
-bio: A Person who travels the world eating noodles
+title: Indrajeet Kumar
+bio: Software Development Engineer | Java Developer
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -30,31 +30,25 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: github # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  shortname: mydisqus # enter this from your disqus account
+  categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 facebook: myfacebook
 twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+instagram: indrajeet1103
+linkedin: indrajeet-1103
+github: officio-indrajeet
+email: kumari@tcd.ie
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  indrajeetk:
+    name: Indrajeet Kumar
+    bio: Software Development Engineer | Java Developer
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
-
+   # twitter: johndoe
+  
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
