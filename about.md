@@ -49,7 +49,8 @@ to get in touch anytime <span>&#9749;</span></p>.<br>
          <span style="color:green">Git</span> | 
         <span style="color:green">MapReduce</span> | 
         <span style="color:green">J2EE</span> | 
-        <span style="color:green">Jenkins</span>
+        <span style="color:green">Jenkins</span> |
+		<span style="color:green">Docker</span>
     </p>
 
 </div>
@@ -69,7 +70,7 @@ average of 20,000 bill payments daily, resulting in a 30% increase in transactio
 post-implementation feedback.<br>•Developed the back-end engine with Java and PLSQL, resulting in a 20% improvement in transaction processing speed,
 and also Produced comprehensive requirement specification documentation for transaction development, ensuring a 20%
 reduction in development time and providing a clear roadmap for the project team.<br>•Optimized the existing payment flow to reduce the transaction time by 20% and improve the user experience, as
-evidenced by a 15% increase in customer satisfact.<br>•As a part of the RTB team, successfully Handled technical requests filed by end-users, achieving a 15% reduction in
+evidenced by a 15% increase in customer satisfaction.<br>•As a part of the RTB team, successfully Handled technical requests filed by end-users, achieving a 15% reduction in
 response time and resolving 90% of issues within established SLAs.<br>•Proactively monitored system alerts, swiftly escalating critical issues and contributing to a 25% reduction in system
 downtime. An integral part of the roster, ensuring continuous system surveillance for optimal operational performance.<br>•Tech: Java, JavaScript, PLSQL, J2EE, JSON, XML, Weblogic, Oracle Database.</p>
 </ul>
@@ -77,9 +78,8 @@ downtime. An integral part of the roster, ensuring continuous system surveillanc
 
 <h2 id="contact">SOME FUN FACTS ABOUT ME</h2>
 <ul>
-<li><h4 style="font-family: 'Comic Sans MS';">I am a Violinist <span>&#127931;</span>.</h4></li>
-<li><h4 style="font-family: 'Comic Sans MS';">I can speak, read and write 3 languages.</h4></li>
-<li><h4 style="font-family: 'Comic Sans MS';">I have visited Thailand <span>&#127481;&#127469;</span>.</h4></li>
+<li><h4 style="font-family: 'Comic Sans MS';">I love to play cricket <span>&#127951;</span>.</h4></li>
+<li><h4 style="font-family: 'Comic Sans MS';">I love ice cream while coding to make the code look cool🧊 😸.</h4></li>
 <li><h4 style="font-family: 'Comic Sans MS';">I love hiking and long drives <span>&#128663;</span>.</h4></li>
 </ul>
 
