@@ -24,7 +24,7 @@ to get in touch anytime <span>&#9749;</span></p>.<br>
 <li><h4 style="font-family: 'Comic Sans MS';">Text Analytics<a href="https://teaching.scss.tcd.ie/module/cs7is4-text-analytics/"></a> under Prof. Dr. Carl Vogel, Jan 2024 - May2024</h4></li>
 	
 <h2>SKILLS</h2>
-<div style=" width: 500px;height: 270px;border: 3px solid black;box-sizing: border-box;">
+<div style=" width: 500px;height: 400px;border: 3px solid black;box-sizing: border-box;">
     <p style="margin: 35px;"><code style="font-size: 15px;">Programming</code> :  
           <span style="color:green">Java</span> | <span style="color:green">JavaScript</span>
           | <span style="color:green">CPP</span> | <span style="color:green">Python</span> | <span style="color:green">C</span> 
