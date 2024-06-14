@@ -72,7 +72,7 @@ to get in touch anytime <span>&#9749;</span></p>.<br>
   		<span style="color:green">Vs Code</span> |
 		<span style="color:green">XML</span> |
   		<span style="color:green">XSLT</span> |
-		<span style="color:green">JSON</span> |
+		<span style="color:green">JSON</span>
     </p>
 
 </div>
