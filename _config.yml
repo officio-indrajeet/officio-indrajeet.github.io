@@ -18,7 +18,7 @@ dark-theme: false
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: /assets/files/Indrajeet's_Resume.pdf
+resume-url: /assets/files/Indrajeet_s_Resume_Java_v1.pdf
 
 domain: officio-indrajeet.github.io
 url: https://officio-indrajeet.github.io
@@ -40,7 +40,7 @@ disqus:
 #instagram: indrajeet1103
 linkedin: indrajeet-1103
 github: officio-indrajeet
-email: kumari@tcd.ie
+email: officio.indrajeet@gmail.com
 
 authors:
   indrajeetk:
