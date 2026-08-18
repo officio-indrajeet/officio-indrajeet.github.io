@@ -4,34 +4,56 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
+  darkMode: "class",
+
   theme: {
     extend: {
       colors: {
-        primary: '#3b82f6',
-        secondary: '#8b5cf6',
-        dark: '#0f172a',
-        darker: '#020617',
+        primary: "#06b6d4",
+        secondary: "#3b82f6",
+        dark: "#0f172a",
+        darker: "#020617",
       },
+
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-in',
-        'slide-up': 'slideUp 0.6s ease-out',
-        'float': 'float 3s ease-in-out infinite',
+        "fade-in": "fadeIn 0.6s ease-out",
+        "slide-up": "slideUp 0.6s ease-out",
+        float: "float 3s ease-in-out infinite",
       },
+
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
         },
+
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+          "0%": {
+            transform: "translateY(20px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
         },
+
         float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-10px)",
+          },
         },
       },
     },
   },
+
   plugins: [],
-}
+};

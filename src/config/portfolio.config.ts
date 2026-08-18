@@ -1,24 +1,28 @@
 /**
- * Portfolio Configuration File
- * 
- * This file contains all customizable settings for your portfolio.
- * Update these values to personalize your portfolio website.
+ * Portfolio Configuration
+ *
+ * Central configuration for portfolio-wide settings.
+ * Keep personal/content data in userData.ts where possible.
  */
 
 export const portfolioConfig = {
+  // ---------------------------------------------------------------------------
   // Personal Information
+  // ---------------------------------------------------------------------------
   personal: {
     name: "Indrajeet Kumar",
-    title: "Software Engineer | Full-Stack Developer",
-    bio: "Results-driven Software Engineer with 5.5 years of experience designing and deploying cloud-native microservices and distributed systems. Expertise in Java, Spring Boot, Apache Kafka, Kubernetes, Docker, and AWS.",
-    location: "Athlone, Ireland",
-    company: "Ericsson",
+    title: "Senior Software Engineer | Backend & Distributed Systems",
+    bio: "Senior Software Engineer focused on scalable backend systems, distributed services, event-driven architectures, and cloud-native platforms. Experienced with Java, Spring Boot, Kafka, Kubernetes, AWS, and production observability.",
+    location: "Ireland",
+    company: "Fidelity Investments",
     email: "officio.indrajeet@gmail.com",
     phone: "+353 838014463",
     avatar: "/profile.jpg",
   },
 
+  // ---------------------------------------------------------------------------
   // Social Links
+  // ---------------------------------------------------------------------------
   social: {
     github: "https://github.com/officio-indrajeet",
     linkedin: "https://www.linkedin.com/in/indrajeet-1103/",
@@ -26,76 +30,137 @@ export const portfolioConfig = {
     twitter: "",
   },
 
-  // GitHub Settings
+  // ---------------------------------------------------------------------------
+  // GitHub
+  // ---------------------------------------------------------------------------
   github: {
     username: "officio-indrajeet",
     showForks: false,
     maxRepos: 12,
   },
 
-  // Theme Colors (Tailwind CSS)
+  // ---------------------------------------------------------------------------
+  // Theme
+  // ---------------------------------------------------------------------------
   theme: {
-    primaryColor: "#06b6d4", // Cyan
-    secondaryColor: "#3b82f6", // Blue
+    primaryColor: "#06b6d4",
+    secondaryColor: "#3b82f6",
     darkColor: "#0f172a",
     darkerColor: "#020617",
   },
 
-  // Skills & Technologies
+  // ---------------------------------------------------------------------------
+  // Core Skills
+  // ---------------------------------------------------------------------------
   skills: [
     {
-      category: "Programming Languages",
-      items: ["Java", "Python", "JavaScript", "SQL", "C", "C++", "HTML", "CSS", "Bash/Shell Scripting"]
+      category: "Backend & Distributed Systems",
+      items: [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "REST APIs",
+        "Apache Kafka",
+        "Kafka Streams",
+        "Avro",
+        "Schema Registry",
+      ],
     },
+
     {
-      category: "Backend Technologies",
-      items: ["Spring Boot", "Spring Framework", "Microservices", "REST API", "Django", "Express.js", "Hibernate", "JPA", "JDBC"]
+      category: "Cloud & Infrastructure",
+      items: [
+        "AWS",
+        "AWS EKS",
+        "S3",
+        "ECS",
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "IAM",
+        "CI/CD",
+        "Spinnaker",
+      ],
     },
+
     {
-      category: "Frontend Technologies",
-      items: ["React.js", "Redux Toolkit", "jQuery", "Oracle JET", "Lit.js"]
+      category: "Data",
+      items: [
+        "PostgreSQL",
+        "Oracle",
+        "Cassandra",
+        "MongoDB",
+        "Redis",
+        "SQL",
+        "MinIO",
+      ],
     },
+
     {
-      category: "Cloud & DevOps",
-      items: ["AWS (EC2, S3, Lambda, ECS, RDS, IAM, DynamoDB)", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Spinnaker", "Helm"]
+      category: "Observability & Engineering",
+      items: [
+        "Datadog",
+        "Prometheus",
+        "Grafana",
+        "Elasticsearch",
+        "GitHub",
+        "GitHub Copilot",
+        "Maven",
+        "Gradle",
+        "JUnit",
+        "Mockito",
+        "Jira",
+      ],
     },
+
     {
-      category: "Messaging & Streaming",
-      items: ["Apache Kafka", "Kafka Streams", "Avro", "Protobuf", "JMS", "Schema Registry", "APIcurio"]
+      category: "Languages",
+      items: [
+        "Java",
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Bash",
+      ],
     },
+
     {
-      category: "Databases",
-      items: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "SQL Server", "AWS RDS", "Cassandra", "MinIO", "Redis"]
+      category: "Additional",
+      items: [
+        "React",
+        "Redux",
+        "FastAPI",
+        "RAG",
+        "LLM Applications",
+      ],
     },
-    {
-      category: "Tools & Technologies",
-      items: ["Git", "Bitbucket", "Maven", "Gradle", "JIRA", "Confluence", "Postman", "Grafana", "Prometheus", "Elasticsearch"]
-    },
-    {
-      category: "Testing & Methodologies",
-      items: ["JUnit", "Mockito", "Integration Testing", "Unit Testing", "Agile/Scrum", "TDD"]
-    },
-    {
-      category: "Machine Learning",
-      items: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "TensorFlow"]
-    }
   ],
 
-  // About Section
-  about: [
-    "🎓 Master's in Computer Science (Intelligent Systems) from Trinity College Dublin - GPA: 3.8/4.0",
-    "💼 Currently working as Software Engineer at Ericsson, Athlone, Ireland",
-    "🚀 5.5 years of experience in cloud-native microservices and distributed systems",
-    "⚡ Proven track record of optimizing system performance - reduced latency by 35% and improved throughput by 2x",
-    "☁️ Expert in Java, Spring Boot, Apache Kafka, Kubernetes, Docker, and AWS",
-    "🔧 Strong background in full-stack development, Python automation, and agile methodologies"
+  // ---------------------------------------------------------------------------
+  // Engineering Focus
+  // ---------------------------------------------------------------------------
+  focusAreas: [
+    "Backend Engineering",
+    "Distributed Systems",
+    "Event-Driven Architecture",
+    "Cloud-Native Development",
+    "Performance Engineering",
+    "Production Observability",
   ],
 
-  // SEO & Meta
+  // ---------------------------------------------------------------------------
+  // SEO & Metadata
+  // ---------------------------------------------------------------------------
   seo: {
-    title: "Indrajeet Kumar - Software Engineer | Full-Stack Developer",
-    description: "Portfolio of Indrajeet Kumar, a Software Engineer with 5.5 years of experience in cloud-native microservices, distributed systems, Java, Spring Boot, Apache Kafka, Kubernetes, and AWS",
-    keywords: "Software Engineer, Full Stack Developer, Java, Spring Boot, Microservices, Apache Kafka, Kubernetes, Docker, AWS, React, Python, Cloud Native",
+    title:
+      "Indrajeet Kumar | Senior Software Engineer | Backend & Distributed Systems",
+
+    description:
+      "Portfolio of Indrajeet Kumar, Senior Software Engineer specializing in Java, Spring Boot, distributed systems, Apache Kafka, Kubernetes, AWS, and cloud-native engineering.",
+
+    keywords:
+      "Indrajeet Kumar, Senior Software Engineer, Backend Engineer, Distributed Systems, Java, Spring Boot, Apache Kafka, Kubernetes, AWS, AWS EKS, Microservices, Cloud Native, Event Driven Architecture",
   },
 };
 

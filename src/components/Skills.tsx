@@ -1,108 +1,275 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["Java", "Python", "JavaScript", "SQL", "Bash", "C/C++"],
+      title: "Core Languages",
+      description: "Primary languages used for production software engineering",
+      skills: [
+        "Java",
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Bash",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
         </svg>
       ),
-      gradient: "from-blue-500 to-cyan-500"
     },
+
     {
-      title: "Backend",
-      skills: ["Spring Boot", "Java", "Microservices", "REST APIs", "Node.js", "Express.js", "Django"],
+      title: "Backend & Distributed Systems",
+      description: "Building scalable services and event-driven architectures",
+      skills: [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "REST APIs",
+        "Apache Kafka",
+        "Kafka Streams",
+        "Avro",
+        "Schema Registry",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"
+          />
         </svg>
       ),
-      gradient: "from-green-500 to-emerald-500"
     },
+
     {
-      title: "Frontend",
-      skills: ["React.js", "Redux", "HTML5", "CSS3", "jQuery", "Responsive Design"],
+      title: "Cloud & Infrastructure",
+      description: "Cloud-native development, containers, and orchestration",
+      skills: [
+        "AWS",
+        "AWS EKS",
+        "S3",
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "IAM",
+        "Spinnaker",
+        "CI/CD",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+          />
         </svg>
       ),
-      gradient: "from-purple-500 to-pink-500"
     },
+
     {
-      title: "Databases",
-      skills: ["Oracle", "PostgreSQL", "MySQL", "MongoDB", "Cassandra", "AWS RDS", "Redis"],
+      title: "Databases & Storage",
+      description: "Relational, NoSQL, caching, and distributed storage",
+      skills: [
+        "PostgreSQL",
+        "Oracle",
+        "Cassandra",
+        "MongoDB",
+        "Redis",
+        "MySQL",
+        "SQL Server",
+        "MinIO",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"
+          />
         </svg>
       ),
-      gradient: "from-orange-500 to-red-500"
     },
+
     {
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Spinnaker"],
+      title: "Observability & Engineering",
+      description: "Monitoring, reliability, testing, and developer tooling",
+      skills: [
+        "Datadog",
+        "Prometheus",
+        "Grafana",
+        "Elasticsearch",
+        "GitHub",
+        "GitHub Copilot",
+        "Maven",
+        "Gradle",
+        "JUnit",
+        "Mockito",
+        "Jira",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 19V6l12-3v13M9 19c0 1.105-1.79 2-4 2s-4-.895-4-2 1.79-2 4-2 4 .895 4 2zm12-3c0 1.105-1.79 2-4 2s-4-.895-4-2 1.79-2 4-2 4 .895 4 2z"
+          />
         </svg>
       ),
-      gradient: "from-indigo-500 to-blue-500"
     },
+
     {
-      title: "Tools",
-      skills: ["Git", "Kafka", "Elasticsearch", "Grafana", "Prometheus", "Jira"],
+      title: "Frontend & AI",
+      description: "Supporting technologies for product development and AI",
+      skills: [
+        "React",
+        "Redux",
+        "HTML",
+        "CSS",
+        "FastAPI",
+        "RAG",
+        "LLM Applications",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+      ],
       icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          />
         </svg>
       ),
-      gradient: "from-teal-500 to-cyan-500"
     },
-    {
-      title: "Machine Learning",
-      skills: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "TensorFlow"],
-      icon: (
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
-      gradient: "from-yellow-500 to-amber-500"
-    }
+  ];
+
+  const coreTechnologies = [
+    "Java",
+    "Spring Boot",
+    "Apache Kafka",
+    "Microservices",
+    "AWS",
+    "AWS EKS",
+    "Kubernetes",
+    "Docker",
+    "PostgreSQL",
+    "Redis",
   ];
 
   return (
-    <section id="skills" className="py-20 relative bg-gray-50 dark:bg-gray-800">
+    <section
+      id="skills"
+      className="py-20 relative bg-gray-50 dark:bg-gray-800"
+    >
       <div className="container mx-auto px-6">
+        {/* Header */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900 dark:text-white">
           Skills & Technologies
         </h2>
-        <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-400 dark:to-blue-400 mx-auto rounded-full mb-6"></div>
-        <p className="text-gray-600 dark:text-gray-400 text-center mb-16 max-w-2xl mx-auto text-lg">
-          A comprehensive toolkit built through continuous learning and hands-on project experience
+
+        <div className="w-20 h-1 bg-cyan-500 dark:bg-cyan-400 mx-auto rounded-full mb-6"></div>
+
+        <p className="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
+          A production-focused technology stack built through experience
+          designing backend services, distributed systems, and cloud-native
+          applications.
         </p>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Core Technologies */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-white dark:bg-gray-900 border border-cyan-200 dark:border-cyan-800 rounded-2xl p-6 md:p-7">
+            <div className="text-center mb-5">
+              <p className="text-sm font-semibold uppercase tracking-wider text-cyan-600 dark:text-cyan-400">
+                Core Technologies
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-2.5">
+              {coreTechnologies.map((technology) => (
+                <span
+                  key={technology}
+                  className="px-4 py-2 rounded-full bg-cyan-50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 border border-cyan-100 dark:border-cyan-800 font-semibold text-sm"
+                >
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Skill Categories */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group animate-slide-up"
+              className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 md:p-7 hover:border-cyan-300 dark:hover:border-cyan-700 hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <div className={`w-12 h-12 bg-gradient-to-br ${category.gradient} rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform`}>
+              {/* Category Header */}
+              <div className="flex items-start gap-4 mb-5">
+                <div className="w-11 h-11 bg-cyan-500 dark:bg-cyan-600 rounded-lg flex items-center justify-center flex-shrink-0">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">{category.title}</h3>
+
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                    {category.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    {category.description}
+                  </p>
+                </div>
               </div>
-              
+
+              {/* Skills */}
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 text-sm rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-cyan-500 hover:text-white dark:hover:bg-cyan-600 transition-all duration-300 cursor-default font-medium"
+                    className="px-3 py-1.5 text-sm rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-cyan-300 dark:hover:border-cyan-700 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors duration-200"
                   >
                     {skill}
                   </span>
@@ -112,11 +279,16 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Specialization Card */}
-        <div className="mt-12 text-center">
-          <div className="inline-block bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 border-2 border-cyan-200 dark:border-cyan-800 rounded-xl p-6">
-            <p className="text-lg font-medium text-gray-900 dark:text-white">
-              💡 Specialized in <span className="text-cyan-600 dark:text-cyan-400 font-bold">Microservices Architecture</span>, <span className="text-cyan-600 dark:text-cyan-400 font-bold">Cloud-Native Development</span>, and <span className="text-cyan-600 dark:text-cyan-400 font-bold">DevOps</span>
+        {/* Specialization */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="text-center bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-7">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <span className="font-semibold text-gray-900 dark:text-white">
+                Core specialization:
+              </span>{" "}
+              backend engineering, distributed systems, event-driven
+              architecture, cloud-native development, and production
+              observability.
             </p>
           </div>
         </div>

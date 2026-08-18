@@ -1,207 +1,322 @@
-# 🌟 Portfolio Website
+# Indrajeet Kumar — Portfolio
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                                                           ║
-║   ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗     ║
-║   ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗    ║
-║   ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║    ║
-║   ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║    ║
-║   ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝    ║
-║   ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝     ║
-║                                                           ║
-║        Modern • Responsive • Beautiful • Fast            ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
+Personal portfolio website for **Indrajeet Kumar**, Senior Software Engineer.
 
-A stunning, modern, fully responsive portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
+🌐 **Live Website:** <https://officio-indrajeet.github.io/>
 
-**✨ Live Demo:** [View Demo](https://your-portfolio-url.com)
-**📚 Full Documentation:** See all `.md` files in this project
+---
 
-## 🚀 Features
+## About the Project
 
-- **Modern Design**: Clean, professional design with smooth animations
-- **Fully Responsive**: Works perfectly on all devices
-- **GitHub Integration**: Automatically fetches and displays your GitHub repositories
-- **Customizable**: Easy to customize through configuration files
-- **Fast Performance**: Built with Vite for lightning-fast development and builds
-- **Type-Safe**: Written in TypeScript for better code quality
+A modern, responsive portfolio website built to showcase my software engineering experience, technical projects, skills, and professional background.
 
-## 📋 Sections
+The portfolio focuses on backend engineering, distributed systems, cloud-native development, and software engineering projects.
 
-- **Hero**: Eye-catching introduction with your photo and social links
-- **About**: Brief introduction and statistics
-- **Projects**: Showcase of your GitHub repositories with filtering
-- **Skills**: Display your technical skills organized by category
-- **Contact**: Contact form and information
+---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React 19
 - TypeScript
 - Vite
 - Tailwind CSS
 - GitHub API
+- GitHub Pages
 
-## 🎨 Customization
+---
 
-### 1. Personal Information
+## Features
 
-Edit `src/data/userData.ts` to update your personal information:
+- Responsive design for desktop, tablet, and mobile
+- Professional engineering-focused layout
+- Experience section
+- Selected projects section
+- Technical skills grouped by category
+- Education section
+- GitHub repository integration
+- LinkedIn and GitHub links
+- Contact information
+- SEO metadata
+- Open Graph metadata for social sharing
+- Fast Vite production builds
+- GitHub Pages deployment
 
-```typescript
-export const userData = {
-  name: "Your Name",
-  title: "Your Title",
-  bio: "Your bio",
-  location: "Your Location",
-  // ... more fields
-};
+---
+
+## Project Structure
+
+```text
+.
+├── public/
+│   └── profile.jpg
+│
+├── src/
+│   ├── components/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Education.tsx
+│   │   └── Contact.tsx
+│   │
+│   ├── data/
+│   │   └── userData.ts
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-### 2. Skills
+---
 
-Update your skills in `src/data/userData.ts`:
+## Local Development
 
-```typescript
-skills: [
-  { category: "Frontend", items: ["React", "Vue", ...] },
-  { category: "Backend", items: ["Node.js", "Python", ...] },
-  // ... more categories
-]
+### Requirements
+
+- Node.js 18+
+- npm
+
+### Clone the repository
+
+```bash
+git clone https://github.com/officio-indrajeet/officio-indrajeet.github.io.git
 ```
 
-### 3. Theme Colors
+### Navigate to the project
 
-Customize colors in `tailwind.config.js`:
-
-```javascript
-colors: {
-  primary: '#3b82f6',    // Change to your preferred color
-  secondary: '#8b5cf6',  // Change to your preferred color
-  // ...
-}
+```bash
+cd officio-indrajeet.github.io
 ```
 
-### 4. GitHub Integration
+### Install dependencies
 
-The portfolio automatically fetches your repositories from GitHub. Update the username in `src/components/Projects.tsx`:
-
-```typescript
-const response = await fetch('https://api.github.com/users/YOUR_USERNAME/repos');
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+### Start the development server
+
 ```bash
 npm run dev
 ```
 
-3. Open your browser and visit `http://localhost:5173`
+The application will be available at:
 
-### Build for Production
+```text
+http://localhost:5173
+```
+
+---
+
+## Production Build
+
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-The built files will be in the `dist` folder.
+The generated production files will be available in:
 
-### Preview Production Build
+```text
+dist/
+```
+
+### Preview the production build
 
 ```bash
 npm run preview
 ```
 
-## 📦 Deployment
+---
 
-### Deploy to GitHub Pages
+## Configuration
 
-1. Update `vite.config.ts` with your repository name:
-```typescript
-export default defineConfig({
-  base: '/your-repo-name/',
-  // ...
-})
+Portfolio content is primarily managed through:
+
+```text
+src/data/userData.ts
 ```
 
-2. Build and deploy:
-```bash
-npm run build
-# Deploy the dist folder to GitHub Pages
-```
+This file contains the data used throughout the portfolio, including:
 
-### Deploy to Vercel
+- Personal information
+- Professional experience
+- Technical skills
+- Education
+- Projects
+- Social links
 
-1. Install Vercel CLI:
-```bash
-npm i -g vercel
-```
-
-2. Deploy:
-```bash
-vercel
-```
-
-### Deploy to Netlify
-
-1. Build the project:
-```bash
-npm run build
-```
-
-2. Drag and drop the `dist` folder to Netlify
-
-## 📝 Customization Guide
-
-### Adding New Sections
-
-1. Create a new component in `src/components/`
-2. Import and add it to `src/App.tsx`
-3. Add navigation link in `src/components/Navbar.tsx`
-
-### Changing Animations
-
-Animations are defined in `tailwind.config.js`. You can:
-- Modify existing animations
-- Add new animations
-- Adjust animation timing
-
-### Updating Styles
-
-- Global styles: `src/index.css`
-- Component styles: Use Tailwind classes in components
-- Custom utilities: Add to `tailwind.config.js`
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own use!
-
-## 📄 License
-
-MIT License - feel free to use this for your own portfolio!
-
-## 🙏 Acknowledgments
-
-- Icons from Heroicons
-- GitHub API for repository data
-- Tailwind CSS for styling
+This keeps the portfolio content separate from the React components and makes future updates easier.
 
 ---
 
-Built with ❤️ by Indrajeet Kumar
+## GitHub Integration
+
+The portfolio can retrieve public GitHub repository information using the GitHub API.
+
+GitHub profile:
+
+<https://github.com/officio-indrajeet>
+
+When modifying the GitHub integration, update the relevant configuration in:
+
+```text
+src/components/Projects.tsx
+```
+
+---
+
+## Deployment
+
+The portfolio is hosted using **GitHub Pages**.
+
+### Repository
+
+<https://github.com/officio-indrajeet/officio-indrajeet.github.io>
+
+### Live Website
+
+<https://officio-indrajeet.github.io/>
+
+The project source code is maintained on the `main` branch, with GitHub Pages responsible for serving the deployed website.
+
+---
+
+## Updating the Portfolio
+
+After making changes locally:
+
+```bash
+git status
+```
+
+Review the modified files.
+
+Then:
+
+```bash
+git add .
+```
+
+Create a commit:
+
+```bash
+git commit -m "Update portfolio"
+```
+
+Push the changes:
+
+```bash
+git push origin main
+```
+
+---
+
+## Customization
+
+### Personal Information
+
+Update:
+
+```text
+src/data/userData.ts
+```
+
+### Website Metadata
+
+Update:
+
+```text
+index.html
+```
+
+This contains:
+
+- Page title
+- SEO description
+- Keywords
+- Open Graph metadata
+- Social sharing metadata
+- Structured data
+
+### Styling
+
+Global styling:
+
+```text
+src/index.css
+```
+
+Component styling is primarily handled using Tailwind CSS classes.
+
+### Components
+
+Reusable UI components are located in:
+
+```text
+src/components/
+```
+
+---
+
+## Performance
+
+The website is built with Vite to provide:
+
+- Fast development builds
+- Optimized production bundles
+- Modern JavaScript and CSS processing
+- Lightweight static deployment
+- Responsive performance across devices
+
+---
+
+## Browser Support
+
+The portfolio is designed for modern browsers supporting:
+
+- ES Modules
+- Modern JavaScript
+- CSS Flexbox
+- CSS Grid
+- Responsive Web APIs
+
+---
+
+## Contact
+
+For professional opportunities or software engineering discussions:
+
+**Indrajeet Kumar**
+
+🌐 Portfolio:  
+<https://officio-indrajeet.github.io/>
+
+💻 GitHub:  
+<https://github.com/officio-indrajeet>
+
+💼 LinkedIn:  
+<https://www.linkedin.com/in/indrajeet-1103/>
+
+📧 Email:  
+<officio.indrajeet@gmail.com>
+
+---
+
+## License
+
+This repository contains a personal portfolio website and is not intended to be distributed as a general-purpose portfolio template.
+
+---
+
+Built with ❤️ by **Indrajeet Kumar** using React, TypeScript, Vite, and Tailwind CSS.
