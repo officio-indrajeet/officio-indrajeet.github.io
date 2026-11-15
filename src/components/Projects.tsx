@@ -6,7 +6,7 @@ export default function Projects() {
       <div className="container">
         <div className="section-head section-head-split">
           <div><span className="section-kicker">04 / Selected work</span><h2>Ideas turned into<br/><em>working systems.</em></h2></div>
-          <div className="section-side-copy"><p className="section-deck">A selection of engineering projects across event-driven backend systems, full-stack applications and cloud-native development.</p><a className="inline-link" href={userData.github} target="_blank" rel="noopener noreferrer">Explore GitHub <span>↗</span></a></div>
+          <div className="section-side-copy"><p className="section-deck">Selected work across distributed systems and full-stack development.</p><a className="inline-link" href={userData.github} target="_blank" rel="noopener noreferrer">Explore GitHub <span>↗</span></a></div>
         </div>
         <div className="project-grid">
           {userData.projects.map((project, index) => (
