@@ -1,7 +1,7 @@
 export const userData = {
   name: "Indrajeet Kumar",
-  title: "Senior Backend Software Engineer | Distributed Systems",
-  bio: "Senior Backend Software Engineer with 6+ years of experience designing, scaling, and operating distributed backend systems in Java and Python. Focused on event-driven microservices, Kafka-based streaming pipelines, schema-managed data platforms, and reliable cloud-native services.",
+  title: "Senior Software Engineer",
+  bio: "Senior Software Engineer with 6+ years of experience building Java and Python services, web applications, Kafka pipelines, and cloud-native platforms. Experienced across frontend development, distributed systems, and production engineering.",
   location: "Ireland",
   company: "Fidelity Investments",
   email: "officio.indrajeet@gmail.com",
@@ -90,7 +90,7 @@ export const userData = {
     {
       company: "Ericsson",
       position: "Software Engineer",
-      location: "Athlone, Ireland (Hybrid)",
+      location: "Ireland (Hybrid)",
       duration: "Oct 2024 - Jul 2026",
       achievements: [
         "Redesigned the SFTP File Transfer microservice architecture, API contracts, and data flow, increasing throughput from 77 to 152 messages per second and reducing processing time from 12 to 7 minutes.",
