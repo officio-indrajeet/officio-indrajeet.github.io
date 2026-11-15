@@ -16,10 +16,10 @@ export default function Projects() {
                 <span className={`project-status ${project.statusTone}`}>{project.status}</span>
               </div>
               <div className={`project-visual project-visual-${project.name.toLowerCase()}`} aria-hidden="true">
-                <div className="visual-orbit orbit-one"></div>
-                <div className="visual-orbit orbit-two"></div>
-                <i>{project.name === "RiskPulse" ? "↗" : "✓"}</i>
-                <span className="visual-caption">{project.name === "RiskPulse" ? "TRANSACTION PIPELINE" : "STUDY PROGRESS"}</span>
+                <div className="visual-flow">
+                  {(project.name === "RiskPulse" ? ["API", "Redis", "Kafka"] : ["Plan", "Revise", "Mock"]).map((step) => <span key={step}>{step}</span>)}
+                </div>
+                <span className="visual-caption">{project.name === "RiskPulse" ? "TRANSACTION PIPELINE" : "STUDY WORKFLOW"}</span>
               </div>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
