@@ -6,26 +6,24 @@ export default function About() {
       <div className="container">
         <div className="section-head">
           <span className="section-kicker">01 / About</span>
-          <h2>Curious by nature.<br/><em>Practical by design.</em></h2>
-          <p className="section-deck">6+ years building software across frontend, services, and distributed platforms.</p>
+          <h2>Engineering with<br/><em>a wider perspective.</em></h2>
         </div>
         <div className="about-layout">
           <div className="about-copy">
-            <span className="micro-label">A LITTLE BACKGROUND</span>
             {userData.about.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-            <a className="inline-link" href="#contact">Let’s connect <span>↗</span></a>
+            <a className="inline-link" href="#contact">Get in touch <span>↗</span></a>
           </div>
           <aside className="about-panel">
-            <div className="panel-top"><span className="micro-label">ENGINEERING SNAPSHOT</span><span>✳</span></div>
+            <span className="micro-label">AT A GLANCE</span>
             <div className="about-facts">
-              <div><small>CURRENT ROLE</small><strong>{userData.title}</strong></div>
-              <div><small>ORGANISATION</small><strong>{userData.company}</strong></div>
+              <div><small>ROLE</small><strong>{userData.title}</strong></div>
+              <div><small>COMPANY</small><strong>{userData.company}</strong></div>
               <div><small>EDUCATION</small><strong>MSc Computer Science · Trinity College Dublin</strong></div>
-              <div><small>FOCUS</small><strong>Backend · Distributed systems · Cloud</strong></div>
+              <div><small>LOCATION</small><strong>{userData.location}</strong></div>
             </div>
           </aside>
         </div>
-        <div className="focus-label"><span className="micro-label">FOCUS AREAS</span><i></i></div>
+        <div className="focus-label"><span className="micro-label">WHAT I DO</span><i></i></div>
         <div className="focus-grid">
           {userData.focusAreas.map((area, index) => <article className="focus-card" key={area.title}>
             <span className="focus-index">0{index + 1}</span>
