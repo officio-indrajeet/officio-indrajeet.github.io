@@ -7,7 +7,7 @@ export default function About() {
         <div className="section-head">
           <span className="section-kicker">01 / About</span>
           <h2>Curious by nature.<br/><em>Practical by design.</em></h2>
-          <p className="section-deck">I care about the engineering details that make software useful in the real world: clear interfaces, predictable behaviour, measurable performance and systems that are easier to operate.</p>
+          <p className="section-deck">6+ years building software across frontend, services, and distributed platforms.</p>
         </div>
         <div className="about-layout">
           <div className="about-copy">
@@ -25,7 +25,7 @@ export default function About() {
             </div>
           </aside>
         </div>
-        <div className="focus-label"><span className="micro-label">WHAT I ENJOY WORKING ON</span><i></i></div>
+        <div className="focus-label"><span className="micro-label">FOCUS AREAS</span><i></i></div>
         <div className="focus-grid">
           {userData.focusAreas.map((area, index) => <article className="focus-card" key={area.title}>
             <span className="focus-index">0{index + 1}</span>
