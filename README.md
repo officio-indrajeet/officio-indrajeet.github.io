@@ -54,7 +54,7 @@ The site uses Next.js for routing, metadata, static rendering and the applicatio
 
 ## Local development
 
-**Requirements:** Node.js 20.9 or later and npm.
+**Requirements:** Node.js 20.19 or later and npm.
 
 Clone the repository and install dependencies:
 
