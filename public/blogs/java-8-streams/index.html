@@ -8,20 +8,20 @@
 <style>
 :root{color-scheme:light;--ink:#172033;--muted:#586579;--line:#e3e8ef;--accent:#0891b2;--panel:#f5f8fb}
 *{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:17px/1.75 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-header{background:linear-gradient(135deg,#ecfeff,#f8fafc);border-bottom:1px solid var(--line);padding:64px 24px}
-.hero,.layout{max-width:1120px;margin:auto}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
-h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.12;max-width:900px;margin:14px 0}
-.subtitle{color:var(--muted);font-size:1.15rem;max-width:780px}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:56px;padding:48px 24px}
-article{min-width:0}aside{position:sticky;top:24px;align-self:start;border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff}
+header{background:radial-gradient(circle at 85% 15%,rgba(8,145,178,.16),transparent 32%),linear-gradient(135deg,#0f172a,#172554 58%,#164e63);border-bottom:1px solid #26384d;padding:76px 24px}
+.hero,.layout{max-width:1120px;margin:auto}.eyebrow{color:#67e8f9;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.12;max-width:900px;margin:14px 0;color:#f8fafc;letter-spacing:-.035em}
+.subtitle{color:#cbd5e1;font-size:1.15rem;max-width:780px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:56px;padding:56px 24px}
+article{min-width:0}aside{position:sticky;top:24px;align-self:start;border:1px solid var(--line);border-radius:16px;padding:22px;background:linear-gradient(180deg,#fff,#f8fafc);box-shadow:0 12px 32px rgba(15,23,42,.06)}
 aside h2{font-size:1rem;margin:0 0 12px}aside a{display:block;color:var(--muted);font-size:13px;text-decoration:none;padding:4px 0}aside a:hover{color:var(--accent)}
 h2{font-size:1.8rem;line-height:1.3;margin:2.5em 0 .7em}h3{font-size:1.25rem;margin:1.7em 0 .5em}p,li{color:#344054}
-pre{overflow:auto;background:#101827;color:#e5edf7;padding:20px;border-radius:12px;font:14px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace}
+pre{overflow:auto;background:#0b1220;color:#e5edf7;padding:22px;border:1px solid #243449;border-radius:14px;box-shadow:0 8px 22px rgba(15,23,42,.08);font:14px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace}
 code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}p code,li code{background:#eef4f7;padding:2px 5px;border-radius:4px;color:#075985}
-table{width:100%;border-collapse:collapse;margin:18px 0 28px;font-size:15px}th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}th{background:var(--panel)}
-.tip{background:#ecfeff;border-left:4px solid var(--accent);padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0 28px;font-size:15px}th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}th{background:#ecfeff;color:#155e75;font-weight:700}
+.tip{background:linear-gradient(100deg,#ecfeff,#f0fdfa);border:1px solid #bae6fd;border-left:4px solid var(--accent);padding:16px 20px;margin:24px 0;border-radius:0 12px 12px 0;color:#164e63}
 .output{color:#0f766e;font-weight:700;margin-bottom:-10px}
-footer{border-top:1px solid var(--line);padding:30px 24px;text-align:center;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;color:var(--muted);background:#f8fafc}
 @media(max-width:800px){.layout{display:block}aside{position:static;margin-bottom:36px;columns:2}h2{font-size:1.55rem}}
 </style>
 </head>
@@ -197,7 +197,7 @@ System.out.println(parallel.isParallel());</code></pre>
 <h2 id="closing">Final Thoughts</h2>
 <p>Java 8 Streams provide a clean and powerful way to process data. For interviews, focus on understanding how operations work, why lazy evaluation matters, how collectors aggregate data, and when parallel processing is appropriate.</p>
 <p>Practise writing the examples without looking at the answers. Try explaining each method in your own words, just as you would during a technical interview.</p>
-<p><strong>Source code:</strong> <a href="https://github.com/officio-indrajeet/medium-article">Java 8 Streams Interview Examples – GitHub</a></p>
+<p><strong>Source code:</strong> <a href="https://github.com/officio-indrajeet/medium-article/tree/main/java-streams-interview">Java 8 Streams Interview Examples – GitHub</a></p>
 <p>If you found this article useful, consider saving it for your next Java interview preparation session.</p>
 </article>
 <aside><h2>In this article</h2>
