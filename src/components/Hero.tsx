@@ -12,7 +12,7 @@ export default function Hero() {
           <p className="hero-summary">{userData.bio}</p>
           <div className="hero-actions">
             <a href="#experience" className="button button-solid">Explore my work <span>↗</span></a>
-            <a href="/Resume.pdf" className="button button-outline" target="_blank" rel="noopener noreferrer">View résumé <span>↓</span></a>
+            <a href="/resume/" className="button button-outline" target="_blank" rel="noopener noreferrer">View résumé <span>↓</span></a>
           </div>
           <div className="hero-socials">
             <a href={userData.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
