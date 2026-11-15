@@ -1,7 +1,7 @@
 export const userData = {
   name: "Indrajeet Kumar",
   title: "Senior Software Engineer",
-  bio: "Senior Software Engineer with 6+ years of experience building software across Java, Python, React, Angular, Kafka, and cloud platforms. I work across frontend and backend systems, from user-facing features to distributed services.",
+  bio: "Senior Software Engineer with 6+ years of experience across frontend and backend development. I build Java and Python services, React and Angular applications, Kafka pipelines, and cloud-native platforms.",
   location: "Ireland",
   company: "Fidelity Investments",
   email: "officio.indrajeet@gmail.com",
@@ -19,53 +19,23 @@ export const userData = {
   ],
 
   focusAreas: [
-    {
-      title: "Full-stack Engineering",
-      description: "Java, Spring Boot, React, Angular, and TypeScript.",
-    },
-    {
-      title: "Distributed Systems",
-      description: "Kafka, microservices, streaming, and data pipelines.",
-    },
-    {
-      title: "Cloud Platforms",
-      description: "AWS, Docker, Kubernetes, and delivery pipelines.",
-    },
-    {
-      title: "Quality & Reliability",
-      description: "Automated testing, observability, and production support.",
-    },
+    { title: "Full-stack", description: "Java, Spring Boot, React, Angular, and TypeScript." },
+    { title: "Distributed systems", description: "Kafka, microservices, streaming, and data pipelines." },
+    { title: "Cloud", description: "AWS, Docker, Kubernetes, and CI/CD." },
+    { title: "Quality", description: "Automated testing, observability, and production support." },
   ],
 
   skills: [
-    {
-      category: "Languages",
-      items: ["Java", "Python", "TypeScript", "JavaScript", "C", "C++", "Bash", "SQL", "PL/SQL"],
-    },
-    {
-      category: "Frameworks & Services",
-      items: ["Spring Boot", "Spring Framework", "Spring Security", "Spring Cloud Gateway", "Node.js", "Express.js", "Django REST Framework"],
-    },
-    {
-      category: "Frontend",
-      items: ["Angular", "React.js", "Redux", "Lit.js", "HTML5", "CSS3", "Responsive Design"],
-    },
-    {
-      category: "Data & Messaging",
-      items: ["Apache Kafka", "Elasticsearch", "Redis", "Cassandra", "Oracle", "PostgreSQL", "MySQL", "MongoDB", "AWS RDS", "SQL Server", "Avro", "Apicurio Schema Registry", "JMS"],
-    },
-    {
-      category: "Cloud & DevOps",
-      items: ["AWS EC2", "S3", "Lambda", "IAM", "DynamoDB", "Route 53", "API Gateway", "ECS", "EKS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Spinnaker", "CI/CD"],
-    },
-    {
-      category: "Testing & Tools",
-      items: ["JUnit", "Mockito", "Pact", "Playwright", "Jest", "Mocha", "Prometheus", "Grafana", "Datadog", "Kibana", "SonarQube", "Git", "Gerrit", "Postman", "Jira", "Linux", "OpenAPI"],
-    },
+    { category: "Languages", items: ["Java", "Python", "TypeScript", "JavaScript", "C", "C++", "Bash", "SQL", "PL/SQL"] },
+    { category: "Backend", items: ["Spring Boot", "Spring Framework", "Spring Security", "Spring Cloud Gateway", "Node.js", "Express.js", "Django REST Framework"] },
+    { category: "Frontend", items: ["Angular", "React.js", "Redux", "Lit.js", "HTML5", "CSS3", "Responsive Design"] },
+    { category: "Data & Messaging", items: ["Apache Kafka", "Elasticsearch", "Redis", "Cassandra", "Oracle", "PostgreSQL", "MySQL", "MongoDB", "AWS RDS", "SQL Server", "Avro", "Apicurio Schema Registry", "JMS"] },
+    { category: "Cloud & DevOps", items: ["AWS EC2", "S3", "Lambda", "IAM", "DynamoDB", "Route 53", "API Gateway", "ECS", "EKS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Spinnaker", "CI/CD"] },
+    { category: "Testing & Tools", items: ["JUnit", "Mockito", "Pact", "Playwright", "Jest", "Mocha", "Prometheus", "Grafana", "Datadog", "Kibana", "SonarQube", "Git", "Gerrit", "Postman", "Jira", "Linux", "OpenAPI"] },
   ],
 
   about: [
-    "I’m a Senior Software Engineer with 6+ years of experience building software across frontend applications, backend services, and distributed platforms.",
+    "I’m a Senior Software Engineer with 6+ years of experience across frontend applications, backend services, and distributed platforms.",
     "My work spans Java, Python, React, Angular, Kafka, and AWS. Recent results include doubling SFTP throughput and reducing data latency by 35%.",
     "I hold an MSc in Computer Science (Intelligent Systems) from Trinity College Dublin.",
   ],
@@ -93,7 +63,7 @@ export const userData = {
         "Owned three distributed services: SFTP File Transfer, Configurator, and RAN Parser.",
         "Built Kafka and Avro pipelines connecting telecom systems, MinIO storage, and data catalogue services.",
         "Automated vendor-spec parsing and Avro schema registration; raised test coverage above 90% across three services.",
-        "Improved production observability using Prometheus, Grafana, Elasticsearch, and Kibana; managed releases with Spinnaker.",
+        "Improved production observability with Prometheus, Grafana, Elasticsearch, and Kibana; managed releases with Spinnaker.",
       ],
     },
     {
@@ -124,7 +94,7 @@ export const userData = {
   education: [
     {
       institution: "Trinity College Dublin",
-      degree: "Master of Science in Computer Science",
+      degree: "MSc Computer Science",
       location: "Dublin, Ireland",
       duration: "Sep 2023 - Aug 2024",
       gpa: "3.8/4.0",
@@ -132,11 +102,11 @@ export const userData = {
     },
     {
       institution: "BMS College of Engineering",
-      degree: "Bachelor of Engineering in Computer Engineering",
+      degree: "BE Computer Engineering",
       location: "Bangalore, India",
       duration: "Aug 2015 - Jul 2019",
       gpa: "8.7/10 · First Class with Distinction",
-      coursework: ["Data Structures & Algorithms", "Web Development", "Database Management Systems", "Computer Networks", "Operating Systems", "Software Engineering"],
+      coursework: ["Data Structures & Algorithms", "Web Development", "Database Management Systems", "Computer Networks", "Operating Systems"],
     },
   ],
 
@@ -156,7 +126,7 @@ export const userData = {
     {
       name: "SavdhanCity Smart City Platform",
       technologies: ["React.js", "Redux Toolkit", "Django REST Framework", "PostgreSQL", "REST APIs"],
-      description: "A decision-support app helping city managers monitor and improve mobility services.",
+      description: "A decision-support app helping city managers improve mobility services.",
       highlights: [
         "React/Redux workflows for city management.",
         "Django REST services for Bin, Bus, and Air Quality domains.",
