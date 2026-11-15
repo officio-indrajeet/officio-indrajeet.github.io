@@ -2,321 +2,134 @@
 
 Personal portfolio website for **Indrajeet Kumar**, Senior Software Engineer.
 
-🌐 **Live Website:** <https://officio-indrajeet.github.io/>
+**Live website:** https://officio-indrajeet.github.io/
 
----
+## Technology
 
-## About the Project
-
-A modern, responsive portfolio website built to showcase my software engineering experience, technical projects, skills, and professional background.
-
-The portfolio focuses on backend engineering, distributed systems, cloud-native development, and software engineering projects.
-
----
-
-## Tech Stack
-
+- Next.js 16 App Router
 - React 19
 - TypeScript
-- Vite
-- Tailwind CSS
-- GitHub API
-- GitHub Pages
+- Tailwind CSS 4 (PostCSS)
+- Static export hosted on GitHub Pages
 
----
+The site uses Next.js for routing, metadata, static rendering and the application structure. It is exported as static HTML so it can continue to run on GitHub Pages without a Node.js server.
 
 ## Features
 
-- Responsive design for desktop, tablet, and mobile
-- Professional engineering-focused layout
-- Experience section
-- Selected projects section
-- Technical skills grouped by category
-- Education section
-- GitHub repository integration
-- LinkedIn and GitHub links
-- Contact information
-- SEO metadata
-- Open Graph metadata for social sharing
-- Fast Vite production builds
-- GitHub Pages deployment
+- Responsive portfolio with experience, skills, selected projects, writing, education and contact sections
+- App Router page and metadata
+- SEO, canonical URL, Open Graph, Twitter metadata and Person structured data
+- Keyboard-accessible mobile navigation and skip-to-content link
+- Standalone Resume page with print / save as PDF
+- Standalone Java 8 Streams article
+- Static deployment through GitHub Actions
 
----
-
-## Project Structure
+## Project structure
 
 ```text
 .
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── not-found.tsx
 ├── public/
-│   └── profile.jpg
-│
+│   ├── profile.jpg
+│   ├── Resume.pdf
+│   ├── resume/
+│   │   └── index.html
+│   └── blogs/
+│       └── java-8-streams/
+│           └── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Hero.tsx
-│   │   ├── About.tsx
-│   │   ├── Experience.tsx
-│   │   ├── Projects.tsx
-│   │   ├── Skills.tsx
-│   │   ├── Education.tsx
-│   │   └── Contact.tsx
-│   │
 │   ├── data/
 │   │   └── userData.ts
-│   │
-│   ├── App.tsx
-│   ├── main.tsx
 │   └── index.css
-│
-├── index.html
+├── next.config.ts
 ├── package.json
-├── package-lock.json
-├── tailwind.config.js
+├── postcss.config.js
 ├── tsconfig.json
-├── vite.config.ts
 └── README.md
 ```
 
----
+## Local development
 
-## Local Development
+**Requirements:** Node.js 20.9 or later and npm.
 
-### Requirements
-
-- Node.js 18+
-- npm
-
-### Clone the repository
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/officio-indrajeet/officio-indrajeet.github.io.git
-```
-
-### Navigate to the project
-
-```bash
 cd officio-indrajeet.github.io
-```
-
-### Install dependencies
-
-```bash
 npm install
 ```
 
-### Start the development server
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at:
+Open http://localhost:3000.
 
-```text
-http://localhost:5173
-```
+## Build and preview
 
----
-
-## Production Build
-
-Create an optimized production build:
+Create the static export:
 
 ```bash
 npm run build
 ```
 
-The generated production files will be available in:
+Next.js writes the deployable static website to `out/`.
 
-```text
-dist/
-```
+To test the generated static site locally, use a static file server pointed at `out/` (for example, `npx serve out`).
 
-### Preview the production build
+## Content updates
 
-```bash
-npm run preview
-```
-
----
-
-## Configuration
-
-Portfolio content is primarily managed through:
+Portfolio content is maintained in:
 
 ```text
 src/data/userData.ts
 ```
 
-This file contains the data used throughout the portfolio, including:
+This file contains profile information, experience, skills, education and the projects displayed on the homepage.
 
-- Personal information
-- Professional experience
-- Technical skills
-- Education
-- Projects
-- Social links
-
-This keeps the portfolio content separate from the React components and makes future updates easier.
-
----
-
-## GitHub Integration
-
-The portfolio can retrieve public GitHub repository information using the GitHub API.
-
-GitHub profile:
-
-<https://github.com/officio-indrajeet>
-
-When modifying the GitHub integration, update the relevant configuration in:
+The top-level SEO metadata and Person structured data are maintained in:
 
 ```text
-src/components/Projects.tsx
+app/layout.tsx
 ```
 
----
-
-## Deployment
-
-The portfolio is hosted using **GitHub Pages**.
-
-### Repository
-
-<https://github.com/officio-indrajeet/officio-indrajeet.github.io>
-
-### Live Website
-
-<https://officio-indrajeet.github.io/>
-
-The project source code is maintained on the `main` branch, with GitHub Pages responsible for serving the deployed website.
-
----
-
-## Updating the Portfolio
-
-After making changes locally:
-
-```bash
-git status
-```
-
-Review the modified files.
-
-Then:
-
-```bash
-git add .
-```
-
-Create a commit:
-
-```bash
-git commit -m "Update portfolio"
-```
-
-Push the changes:
-
-```bash
-git push origin main
-```
-
----
-
-## Customization
-
-### Personal Information
-
-Update:
-
-```text
-src/data/userData.ts
-```
-
-### Website Metadata
-
-Update:
-
-```text
-index.html
-```
-
-This contains:
-
-- Page title
-- SEO description
-- Keywords
-- Open Graph metadata
-- Social sharing metadata
-- Structured data
-
-### Styling
-
-Global styling:
+Global styling is maintained in:
 
 ```text
 src/index.css
 ```
 
-Component styling is primarily handled using Tailwind CSS classes.
+## Projects
 
-### Components
+- [RiskPulse](https://github.com/officio-indrajeet/riskpulse) — transaction ingestion and Kafka pipeline, currently in progress.
+- [PrepStack](https://github.com/officio-indrajeet/prepstack) — interview preparation dashboard.
 
-Reusable UI components are located in:
+Project descriptions on the portfolio distinguish implemented functionality from work still in progress.
 
-```text
-src/components/
-```
+## Deployment
 
----
+GitHub Actions runs on pushes to `main`:
 
-## Performance
+1. Installs Node dependencies.
+2. Runs ESLint.
+3. Runs TypeScript checking and `next build`.
+4. Publishes the generated `out/` directory to GitHub Pages.
 
-The website is built with Vite to provide:
+The site uses Next.js static export (`output: "export"`) and does not require a server or paid hosting.
 
-- Fast development builds
-- Optimized production bundles
-- Modern JavaScript and CSS processing
-- Lightweight static deployment
-- Responsive performance across devices
-
----
-
-## Browser Support
-
-The portfolio is designed for modern browsers supporting:
-
-- ES Modules
-- Modern JavaScript
-- CSS Flexbox
-- CSS Grid
-- Responsive Web APIs
-
----
+**Repository:** https://github.com/officio-indrajeet/officio-indrajeet.github.io  
+**Website:** https://officio-indrajeet.github.io/
 
 ## Contact
 
-For professional opportunities or software engineering discussions:
+- [GitHub](https://github.com/officio-indrajeet)
+- [LinkedIn](https://www.linkedin.com/in/indrajeet-1103/)
+- officio.indrajeet@gmail.com
 
-**Indrajeet Kumar**
-
-🌐 Portfolio:  
-<https://officio-indrajeet.github.io/>
-
-💻 GitHub:  
-<https://github.com/officio-indrajeet>
-
-💼 LinkedIn:  
-<https://www.linkedin.com/in/indrajeet-1103/>
-
-📧 Email:  
-<officio.indrajeet@gmail.com>
-
----
-
-## License
-
-This repository contains a personal portfolio website and is not intended to be distributed as a general-purpose portfolio template.
-
----
-
-Built with ❤️ by **Indrajeet Kumar** using React, TypeScript, Vite, and Tailwind CSS.
