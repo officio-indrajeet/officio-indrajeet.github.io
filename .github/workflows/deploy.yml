@@ -37,6 +37,12 @@ jobs:
       - name: Type-check and build static site
         run: npm run build
 
+      - name: Verify retained static pages
+        run: |
+          test -f out/resume/index.html
+          test -f out/blogs/java-8-streams/index.html
+          test -f out/profile.jpg
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
