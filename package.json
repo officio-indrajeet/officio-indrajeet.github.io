@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "tsc --noEmit && next build",
-    "start": "next start",
     "lint": "eslint ."
   },
   "dependencies": {
