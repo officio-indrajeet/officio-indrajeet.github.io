@@ -44,10 +44,15 @@ jobs:
             fixAvailable: item.fixAvailable,
             via: item.via.map((entry) => typeof entry === "string" ? entry : entry.title),
           }));
+          const summary = report.metadata?.vulnerabilities ?? {};
           console.log(JSON.stringify({
-            summary: report.metadata?.vulnerabilities ?? "No audit summary returned",
+            summary,
             vulnerabilities,
           }, null, 2));
+          if ((summary.high ?? 0) > 0 || (summary.critical ?? 0) > 0) {
+            console.error("High or critical dependency vulnerabilities must be resolved before deployment.");
+            process.exit(1);
+          }
           NODE
 
       - name: Lint
