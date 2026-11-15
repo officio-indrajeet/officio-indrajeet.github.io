@@ -31,14 +31,14 @@ export default function Navbar() {
         <nav className="nav-links" aria-label="Primary navigation">
           {links.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
         </nav>
-        <a className="nav-cta" href="/resume/" target="_blank" rel="noopener noreferrer">Résumé <span>↗</span></a>
+        <a className="nav-cta" href="/resume/" target="_blank" rel="noopener noreferrer">Resume <span>↗</span></a>
         <button className={open ? "mobile-toggle active" : "mobile-toggle"} onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
           <span></span><span></span>
         </button>
       </div>
       {open && <nav className="mobile-links" aria-label="Mobile navigation">
         {links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}<span>↗</span></a>)}
-        <a href="/resume/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Download résumé <span>↓</span></a>
+        <a href="/resume/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Download resume <span>↓</span></a>
       </nav>}
     </header>
   );
