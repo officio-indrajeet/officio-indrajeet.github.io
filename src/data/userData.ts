@@ -128,7 +128,7 @@ export const userData = {
     },
     {
       name: "PrepStack",
-      status: "Active development",
+      status: "Prototype",
       statusTone: "active",
       technologies: ["React", "JavaScript", "Vite", "CSS", "Local Storage"],
       description: "A personal interview preparation dashboard that turns study topics into a daily plan and tracks progress.",
