@@ -20,16 +20,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
+          cache: npm
+          package-manager-cache: false
 
-      # npm install refreshes the lockfile for the new Next.js dependency graph.
       - name: Install dependencies
         run: npm install
+
+      - name: Dependency security audit
+        run: |
+          npm audit --json > "$RUNNER_TEMP/npm-audit.json" || true
+          node --input-type=module - "$RUNNER_TEMP/npm-audit.json" <<'NODE'
+          import fs from "node:fs";
+          const report = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
+          const vulnerabilities = Object.entries(report.vulnerabilities ?? {}).map(([name, item]) => ({
+            name,
+            severity: item.severity,
+            range: item.range,
+            fixAvailable: item.fixAvailable,
+            via: item.via.map((entry) => typeof entry === "string" ? entry : entry.title),
+          }));
+          console.log(JSON.stringify({
+            summary: report.metadata?.vulnerabilities ?? "No audit summary returned",
+            vulnerabilities,
+          }, null, 2));
+          NODE
 
       - name: Lint
         run: npm run lint
@@ -42,12 +62,15 @@ jobs:
           test -f out/resume/index.html
           test -f out/blogs/java-8-streams/index.html
           test -f out/profile.jpg
+          test -f out/robots.txt
+          test -f out/sitemap.xml
+          test -f out/404.html
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload static export
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./out
 
@@ -60,4 +83,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
