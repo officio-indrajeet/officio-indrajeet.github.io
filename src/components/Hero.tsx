@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="hero-grid" aria-hidden="true"></div>
       <div className="container hero-main">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="status-dot"></span> Based in {userData.location} <span className="eyebrow-separator">/</span> Backend & Distributed Systems</div>
-          <p className="hero-greeting">Hello, I’m <strong>{userData.name}</strong>.</p>
+          <div className="eyebrow"><span className="status-dot"></span> Based in {userData.location} <span className="eyebrow-separator">/</span> Full Stack & Distributed Systems</div>
+          <p className="hero-greeting">Senior Software Engineer</p>
           <h1>Building software that stays <em>reliable</em> as it scales.</h1>
           <p className="hero-summary">{userData.bio}</p>
           <div className="hero-actions">
