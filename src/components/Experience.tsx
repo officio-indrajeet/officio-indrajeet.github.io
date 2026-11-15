@@ -6,7 +6,7 @@ export default function Experience() {
       <div className="container">
         <div className="section-head section-head-split">
           <div><span className="section-kicker">02 / Experience</span><h2>Work shaped by<br/><em>real-world systems.</em></h2></div>
-          <p className="section-deck">Across enterprise software and financial technology, I’ve worked on backend services, high-throughput data pipelines and cloud-native platforms.</p>
+          <p className="section-deck">Experience across financial services, telecom, and enterprise software.</p>
         </div>
         <div className="timeline">
           {userData.experience.map((item, index) => <article className="timeline-item" key={item.company + item.position}>
