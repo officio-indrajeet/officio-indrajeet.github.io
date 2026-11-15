@@ -13,7 +13,7 @@ export default function Education() {
             <div className="education-tags">{item.coursework.map((course) => <span key={course}>{course}</span>)}</div>
           </article>)}
         </div>
-        <div className="certification"><span>✳</span><div><small>PROFESSIONAL CERTIFICATION</small><strong>DEV250 JavaScript Business Rules</strong><p>Stibo Systems · Aarhus, Denmark</p></div></div>
+        <div className="certification"><span>✳</span><div><small>PROFESSIONAL CERTIFICATION</small><strong>{userData.certification.split(" — ")[0]}</strong><p>{userData.certification.split(" — ")[1]}</p></div></div>
       </div>
     </section>
   );
