@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "tsc --noEmit && next build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check:static": "node scripts/check-static-output.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
